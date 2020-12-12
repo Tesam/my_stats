@@ -10,44 +10,46 @@ class HomeAppbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final AppbarContent = Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                child: Text(
+                  greeting,
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontSize: 20.0,
+                  ),
+                ),
+              ),
+              Container(
+                child: Text(
+                  userName,
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontSize: 25.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              )
+            ],
+          ),
+          CircleAvatar(
+            radius: 50,
+            backgroundColor: Colors.red,
+          ),
+        ]);
+
     return Stack(
       alignment: const Alignment(-0.6, -0.6),
       children: [
         AppbarShape(),
-        Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Container(
-                    child: Text(
-                      greeting,
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ),
-                  Container(
-                    child: Text(
-                      userName,
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 25.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  )
-                ],
-              ),
-              CircleAvatar(
-                radius: 50,
-                backgroundColor: Colors.red,
-              ),
-            ])
+        AppbarContent,
       ],
     );
   }
