@@ -8,7 +8,7 @@ class AppbarShape extends StatelessWidget {
       height: shapeHeight,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.vertical(bottom: Radius.circular(60.0)),
-        color: Colors.blue,
+        color: Colors.indigo.shade900,
       ),
     );
   }
