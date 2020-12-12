@@ -24,6 +24,7 @@ class HomeAppbar extends StatelessWidget {
                   textAlign: TextAlign.left,
                   style: TextStyle(
                     fontSize: 20.0,
+                    color: Colors.white70
                   ),
                 ),
               ),
@@ -33,6 +34,7 @@ class HomeAppbar extends StatelessWidget {
                   textAlign: TextAlign.left,
                   style: TextStyle(
                     fontSize: 25.0,
+                    color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
