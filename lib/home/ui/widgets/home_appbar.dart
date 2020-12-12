@@ -29,6 +29,7 @@ class HomeAppbar extends StatelessWidget {
                 ),
               ),
               Container(
+                width: 200.0,
                 child: Text(
                   userName,
                   textAlign: TextAlign.left,
@@ -43,7 +44,6 @@ class HomeAppbar extends StatelessWidget {
           ),
           CircleAvatar(
             radius: 50,
-            backgroundColor: Colors.red,
             backgroundImage: AssetImage(userImage),
           ),
         ]);
