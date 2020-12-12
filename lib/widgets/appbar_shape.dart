@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppbarShape extends StatelessWidget {
-  static const shapeHeight = 350.0;
+  static const shapeHeight = 300.0;
   @override
   Widget build(BuildContext context) {
     return Container(
