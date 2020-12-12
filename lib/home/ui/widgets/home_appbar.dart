@@ -21,12 +21,19 @@ class HomeAppbar extends StatelessWidget {
                 child: Text(
                   greeting,
                   textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontSize: 20.0,
+                  ),
                 ),
               ),
               Container(
                 child: Text(
                   userName,
                   textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontSize: 25.0,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               )
             ],
