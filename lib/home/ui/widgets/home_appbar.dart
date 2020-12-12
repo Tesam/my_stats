@@ -44,6 +44,7 @@ class HomeAppbar extends StatelessWidget {
           CircleAvatar(
             radius: 50,
             backgroundColor: Colors.red,
+            backgroundImage: AssetImage(userImage),
           ),
         ]);
 

@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      body: HomeAppbar("Bryan Octavio",""),
+      body: HomeAppbar("Bryan Pirille","assets/images/person.jpg"),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
