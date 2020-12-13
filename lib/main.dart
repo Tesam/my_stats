@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_stats/home/ui/screens/home_screen.dart';
 import 'package:my_stats/home/ui/widgets/featured_subjects.dart';
 
 import 'package:my_stats/home/ui/widgets/home_appbar.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: HomeScreen()
     );
   }
 }
