@@ -52,7 +52,7 @@ class HomeAppbar extends StatelessWidget {
     return Stack(
       alignment: const Alignment(-0.6, -0.6),
       children: [
-        AppbarShape(Colors.indigo.shade900),
+        AppbarShape(Colors.indigo.shade900, 300.0),
         AppbarContent,
       ],
     );

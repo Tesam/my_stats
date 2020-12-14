@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_stats/lesson/ui/widgets/lesson_appbar.dart';
+import 'package:my_stats/lesson/ui/widgets/lessons_section.dart';
 
 class LessonScreen extends StatefulWidget {
   @override
@@ -10,7 +11,13 @@ class _LessonScreenState extends State<LessonScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: LessonAppbar("Sistemas Operativos II"),
+      body: Stack(
+        alignment: Alignment.bottomCenter,
+        children: [
+          LessonAppbar("Sistemas Operativos II"),
+          LessonsSection(),
+        ],
+      ),
     );
   }
 }

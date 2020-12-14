@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class AppbarShape extends StatelessWidget {
-  static const shapeHeight = 300.0;
+  double shapeHeight = 300.0;
   Color color;
 
-  AppbarShape(this.color);
+  AppbarShape(this.color, this.shapeHeight);
   @override
   Widget build(BuildContext context) {
     return Container(
