@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_stats/home/ui/screens/home_screen.dart';
+import 'package:my_stats/lesson/ui/screens/lesson_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomeScreen()
+      //home: HomeScreen()
+        home: LessonScreen()
     );
   }
 }
