@@ -8,21 +8,8 @@ class LessonAppbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final AppbarContent =
-    Container(
-      width: 300.0,
-      height: 200.0,
-      //alignment: Alignment.topLeft,
-      //color: Colors.blue,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage("assets/images/lessons_background.png"),
-          //alignment: Alignment.bottomCenter,
-        ),
-      ),
-    );
 
-    final aaa = Container(
+    final AppbarContent = Container(
       alignment: Alignment.topCenter,
       margin: EdgeInsets.only(top: 45.0),
       child: Column(
@@ -33,20 +20,28 @@ class LessonAppbar extends StatelessWidget {
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 25.0,
-                  color: Colors.indigo.shade900
+                  color: Colors.black
               ),
             ),
           ),
-          AppbarContent,
+          Container(
+            width: 300.0,
+            height: 200.0,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/lessons_background.png"),
+                //alignment: Alignment.bottomCenter,
+              ),
+            ),
+          )
         ],
       ),
     );
 
     return Stack(
-      //alignment: Alignment.bottomCenter,
       children: [
         AppbarShape(Color(0xFFF9A826)),
-        aaa,
+        AppbarContent,
       ],
     );
   }
