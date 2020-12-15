@@ -40,7 +40,7 @@ class LessonAppbar extends StatelessWidget {
 
     return Stack(
       children: [
-        AppbarShape(Color(0xFFF9A826),350.0),
+        AppbarShape(Color(0xFFF9A826),300.0),
         AppbarContent,
       ],
     );

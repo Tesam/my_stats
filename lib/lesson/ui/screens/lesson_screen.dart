@@ -14,8 +14,8 @@ class _LessonScreenState extends State<LessonScreen> {
       body: Stack(
         alignment: Alignment.bottomCenter,
         children: [
-          LessonAppbar("Sistemas Operativos II"),
           LessonsSection(),
+          LessonAppbar("Sistemas Operativos II"),
         ],
       ),
     );
