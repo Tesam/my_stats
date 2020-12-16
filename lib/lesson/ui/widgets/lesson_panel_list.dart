@@ -27,7 +27,7 @@ class _LessonPanelListState extends State<LessonPanelList> {
   }
 
   Widget _buildPanel() {
-    return ExpansionPanelList(expandedHeaderPadding: EdgeInsets.all(10.0),
+    return ExpansionPanelList(
       expansionCallback: (int index, bool isExpanded) {
         setState(() {
           _data[index].isExpanded = !isExpanded;
