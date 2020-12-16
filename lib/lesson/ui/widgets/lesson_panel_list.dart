@@ -56,21 +56,83 @@ class _LessonPanelListState extends State<LessonPanelList> {
             );
           },
           canTapOnHeader: true,
-          body: ListTile(
-              title: Text(item.expandedValue),
-              subtitle: Text('To delete this panel, tap the trash can icon'),
-              trailing: Icon(Icons.delete),
-              onTap: () {
-                setState(() {
-                  _data.removeWhere((currentItem) => item == currentItem);
-                });
-              }),
+          body: goals,
           isExpanded: item.isExpanded,
         );
       }).toList(),
     );
   }
+
+  final goals = Column(
+    children: [
+      ListTile(
+        title: Text(
+          'Darse cuenta de la importancia de la relación del ingeniero con la ciencia y la tecnología',
+          style: TextStyle(
+            fontSize: 14.0,
+          ),
+        ),
+        subtitle: Container(
+          alignment: Alignment.centerLeft,
+          child: Chip(
+            backgroundColor: Colors.lightGreen.shade300,
+            label: Text('Procedimental'),
+          ),
+        ),
+        trailing: Icon(
+          Icons.done_all,
+          color: Colors.green,
+          size: 30.0,
+        ),
+      ),
+      ListTile(
+        title: Text(
+          'Darse cuenta de la importancia de la relación del ingeniero con la ciencia y la tecnología',
+          style: TextStyle(
+            fontSize: 14.0,
+          ),
+        ),
+        subtitle: Container(
+          alignment: Alignment.centerLeft,
+          child: Chip(backgroundColor: Colors.lightBlue.shade200,
+            label: Text('Conceptual'),
+          ),
+        ),
+        trailing: Icon(
+          Icons.schedule,
+          color: Colors.red,
+          size: 30.0,),
+      ),
+      ListTile(
+        title: Text(
+          'Darse cuenta de la importancia de la relación del ingeniero con la ciencia y la tecnología',
+          style: TextStyle(
+            fontSize: 14.0,
+            color: Colors.grey
+          ),
+        ),
+        subtitle:Container(
+          alignment: Alignment.centerLeft,
+          child: Chip(
+            backgroundColor: Colors.grey.shade100,
+            label: Text(
+              'Actitudinal',
+               style: TextStyle(
+                 color: Colors.grey
+               ),
+            ),
+          ),
+        ),
+        trailing: Icon(
+          Icons.warning,
+          size: 30.0,
+          ),
+      ),
+    ],
+  );
 }
+
+
 
 class Item {
   Item({
