@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_stats/lesson/ui/widgets/lesson_card.dart';
+import 'package:my_stats/lesson/ui/widgets/lesson_panel_list.dart';
 
 class LessonScreen extends StatefulWidget {
   String subjectName;
@@ -27,7 +27,7 @@ class _LessonScreenState extends State<LessonScreen> {
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
-      body: LessonCard("Funciones", "Descripción de fun","U1"),
+      body: LessonPanelList("Funciones", "Descripción de fun","U1"),
 
     );
   }
