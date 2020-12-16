@@ -1,23 +1,34 @@
 import 'package:flutter/material.dart';
-import 'package:my_stats/lesson/ui/widgets/lesson_appbar.dart';
-import 'package:my_stats/lesson/ui/widgets/lessons_section.dart';
+import 'package:my_stats/lesson/ui/widgets/lesson_card.dart';
 
 class LessonScreen extends StatefulWidget {
+  String subjectName;
+
+  LessonScreen(this.subjectName);
   @override
-  _LessonScreenState createState() => _LessonScreenState();
+  _LessonScreenState createState() => _LessonScreenState(subjectName);
 }
 
 class _LessonScreenState extends State<LessonScreen> {
+  String subjectName;
+
+  _LessonScreenState(this.subjectName);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        alignment: Alignment.bottomCenter,
-        children: [
-          LessonsSection(),
-          LessonAppbar("Sistemas Operativos II"),
-        ],
+      appBar: AppBar(
+        title: Text(subjectName),
+        backgroundColor: Color(0xFFF9A826),
+        centerTitle: true,
+        toolbarHeight: 100.0,
+        leading: new IconButton(
+          icon: new Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
       ),
+      body: LessonCard("Funciones", "Descripción de fun","U1"),
+
     );
   }
 }
