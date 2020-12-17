@@ -19,7 +19,7 @@ class _LessonScreenState extends State<LessonScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(subjectName),
-        backgroundColor: Color(0xFFF9A826),
+        backgroundColor: Colors.indigo,
         centerTitle: true,
         toolbarHeight: 100.0,
         leading: new IconButton(
@@ -27,7 +27,7 @@ class _LessonScreenState extends State<LessonScreen> {
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
-      body: LessonPanelList("Funciones", "Descripción de fun","U1"),
+      body: LessonPanelList("Funciones", "3 Objetivos","U1"),
 
     );
   }

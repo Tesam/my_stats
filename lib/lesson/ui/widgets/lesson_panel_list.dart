@@ -40,7 +40,7 @@ class _LessonPanelListState extends State<LessonPanelList> {
               title: Text(lessonName),
               subtitle: Text(lessonDescription),
               leading: CircleAvatar(
-                backgroundColor: Colors.indigo,
+                backgroundColor:  Color(0xFFF9A826),
                 radius: 20.0,
                 child: Container(
                   alignment: Alignment.center,
@@ -75,7 +75,7 @@ class _LessonPanelListState extends State<LessonPanelList> {
         subtitle: Container(
           alignment: Alignment.centerLeft,
           child: Chip(
-            backgroundColor: Colors.lightGreen.shade300,
+            backgroundColor: Colors.lightGreen.shade200,
             label: Text('Procedimental'),
           ),
         ),
@@ -94,7 +94,7 @@ class _LessonPanelListState extends State<LessonPanelList> {
         ),
         subtitle: Container(
           alignment: Alignment.centerLeft,
-          child: Chip(backgroundColor: Colors.lightBlue.shade200,
+          child: Chip(backgroundColor: Colors.lightBlue.shade100,
             label: Text('Conceptual'),
           ),
         ),
@@ -114,7 +114,8 @@ class _LessonPanelListState extends State<LessonPanelList> {
         subtitle:Container(
           alignment: Alignment.centerLeft,
           child: Chip(
-            backgroundColor: Colors.grey.shade100,
+          //  backgroundColor: Colors.grey.shade100,
+            backgroundColor: Colors.orange.shade100,
             label: Text(
               'Actitudinal',
                style: TextStyle(
