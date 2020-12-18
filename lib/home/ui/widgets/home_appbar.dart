@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_stats/widgets/appbar_shape.dart';
 
 class HomeAppbar extends StatelessWidget {
   static const greeting = "Hola!";
@@ -10,50 +9,73 @@ class HomeAppbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final AppbarContent = Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Container(
-                child: Text(
-                  greeting,
-                  textAlign: TextAlign.left,
-                  style: TextStyle(fontSize: 20.0, color: Colors.white70),
-                ),
-              ),
-              Container(
-                width: 200.0,
-                child: Text(
-                  userName,
-                  textAlign: TextAlign.left,
-                  style: TextStyle(
-                    fontSize: 25.0,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              )
-            ],
+
+    return  SliverAppBar(
+      title:Text.rich(
+        TextSpan(
+          text: 'Hola!', // default text style
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
           ),
-          CircleAvatar(
-            radius: 50,
+          children: <TextSpan>[
+            TextSpan(text: ' $userName ',
+              style: TextStyle(
+                color: Colors.white70,
+              ),
+            ),
+          ],
+        ),
+      ),
+      expandedHeight: 200.0,
+      pinned: true,
+      floating: true,
+      snap: true,
+      flexibleSpace: FlexibleSpaceBar(
+        background: Container(
+            alignment: Alignment.bottomCenter,
+            margin: EdgeInsets.only(bottom: 16.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  //alignment: Alignment.bottomCenter,
+                  color: Colors.red,
+                  width: 80.0,
+                  height: 80.0,
+                ),
+                Container(
+                  //alignment: Alignment.bottomCenter,
+                  color: Colors.indigo,
+                  width: 80.0,
+                  height: 80.0,
+                ),
+                Container(
+                  //alignment: Alignment.bottomCenter,
+                  color: Colors.yellow,
+                  width: 80.0,
+                  height: 80.0,
+                )
+              ],
+            )
+        ),
+      ),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(48.0)),
+      ),
+      actions: [
+        Container(
+          margin: EdgeInsets.only(right: 16.0),
+          child: CircleAvatar(
+            radius: 18,
             backgroundColor: Colors.black12,
             child: CircleAvatar(
-              radius: 48,
+              radius: 16,
               backgroundImage: AssetImage(userImage),
             ),
           ),
-        ]);
-
-    return Stack(
-      alignment: const Alignment(-0.6, -0.6),
-      children: [
-        AppbarShape(Colors.indigo.shade900, 300.0),
-        AppbarContent,
+        ),
       ],
     );
   }

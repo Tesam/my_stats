@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:my_stats/home/ui/screens/home_screen.dart';
-import 'package:my_stats/lesson/ui/screens/lesson_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,7 +28,8 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
         //home: HomeScreen()
-        home: LessonScreen('Sistemas Operativos')
+        //home: LessonScreen('Sistemas Operativos')
+        home: HomeScreen(),
     );
   }
 }
