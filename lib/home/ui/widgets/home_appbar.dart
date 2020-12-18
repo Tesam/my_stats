@@ -39,19 +39,16 @@ class HomeAppbar extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
-                  //alignment: Alignment.bottomCenter,
                   color: Colors.red,
                   width: 80.0,
                   height: 80.0,
                 ),
                 Container(
-                  //alignment: Alignment.bottomCenter,
                   color: Colors.indigo,
                   width: 80.0,
                   height: 80.0,
                 ),
                 Container(
-                  //alignment: Alignment.bottomCenter,
                   color: Colors.yellow,
                   width: 80.0,
                   height: 80.0,
