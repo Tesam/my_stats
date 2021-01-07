@@ -43,27 +43,27 @@ final subjects = [
       subjectIcon: Icons.access_alarm
   ),
   new Subject(
-      subjectTitle: 'Sistemas Operativos II',
+      subjectTitle: 'Bases de Datos',
+      lessonQuantity: '15 lecciones',
+      subjectIcon: Icons.access_alarm
+  ),
+  new Subject(
+      subjectTitle: 'Matemática II',
       lessonQuantity: '12 lecciones',
       subjectIcon: Icons.access_alarm
   ),
   new Subject(
-      subjectTitle: 'Sistemas Operativos II',
-      lessonQuantity: '12 lecciones',
+      subjectTitle: 'Programación I',
+      lessonQuantity: '20 lecciones',
       subjectIcon: Icons.access_alarm
   ),
   new Subject(
-      subjectTitle: 'Sistemas Operativos II',
-      lessonQuantity: '12 lecciones',
+      subjectTitle: 'Misterio Cristiano',
+      lessonQuantity: '5 lecciones',
       subjectIcon: Icons.access_alarm
   ),
   new Subject(
-      subjectTitle: 'Sistemas Operativos II',
-      lessonQuantity: '12 lecciones',
-      subjectIcon: Icons.access_alarm
-  ),
-  new Subject(
-      subjectTitle: 'Sistemas Operativos II',
+      subjectTitle: 'Inglés I',
       lessonQuantity: '12 lecciones',
       subjectIcon: Icons.access_alarm
   ),

@@ -14,7 +14,11 @@ class _HomeScreenState extends State<HomeScreen> {
       body: CustomScrollView(
         slivers: [
           HomeAppbar('Bryan','assets/images/person.jpg'),
-          HomeBody(),
+          SliverPadding(
+            padding: EdgeInsets.only(top: 20.0),
+            sliver: HomeBody(),
+          )
+          /*HomeBody(),*/
         ],
       ),
     );
