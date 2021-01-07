@@ -5,6 +5,9 @@ class HomeBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverList(
       delegate: SliverChildListDelegate([
+        SizedBox(
+          height: 16.0,
+        ),
         ListTile(
           leading: Icon(Icons.wb_sunny),
           title: Text('Sunday'),
