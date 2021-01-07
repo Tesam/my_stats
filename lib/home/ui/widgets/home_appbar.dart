@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class HomeAppbar extends StatelessWidget {
   static const greeting = "Hola!";
-  String userName;
-  String userImage;
+  final String userName;
+  final String userImage;
 
-  HomeAppbar(this.userName, this.userImage);
+  const HomeAppbar(this.userName, this.userImage);
 
   Widget _buildGoalsContainer(Goals goals){
     return new Container(
