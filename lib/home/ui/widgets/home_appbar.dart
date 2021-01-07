@@ -41,7 +41,7 @@ class HomeAppbar extends StatelessWidget {
     return SliverAppBar(
       title: Text.rich(
         TextSpan(
-          text: 'Hola!', // default text style
+          text: greeting, // default text style
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
