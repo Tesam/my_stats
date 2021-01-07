@@ -56,19 +56,6 @@ class HomeAppbar extends StatelessWidget {
           ],
         ),
       ),
-      flexibleSpace: FlexibleSpaceBar(
-        background: Container(
-            alignment: Alignment.bottomCenter,
-            margin: EdgeInsets.only(bottom: 16.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: goals.map(_buildGoalsContainer).toList(),
-            ),
-        ),
-      ),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(bottom: Radius.circular(48.0)),
-      ),
       actions: [
         Container(
           margin: EdgeInsets.only(right: 16.0),
@@ -82,6 +69,19 @@ class HomeAppbar extends StatelessWidget {
           ),
         ),
       ],
+      flexibleSpace: FlexibleSpaceBar(
+        background: Container(
+            alignment: Alignment.bottomCenter,
+            margin: EdgeInsets.only(bottom: 16.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: goals.map(_buildGoalsContainer).toList(),
+            ),
+        ),
+      ),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(bottom: Radius.circular(48.0)),
+      ),
       expandedHeight: 200.0,
       pinned: true,
       floating: true,
