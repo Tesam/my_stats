@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_stats/home/ui/widgets/home_appbar.dart';
-import 'package:my_stats/home/ui/widgets/home_body.dart';
+import 'package:my_stats/presentation/home/widgets/home_appbar.dart';
+import 'package:my_stats/presentation/home/widgets/home_body.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

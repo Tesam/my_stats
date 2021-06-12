@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_stats/widgets/appbar_shape.dart';
+import 'package:my_stats/presentation/widgets/appbar_shape.dart';
 
 class LessonAppbar extends StatelessWidget {
   String subjectName;

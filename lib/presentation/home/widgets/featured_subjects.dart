@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_stats/home/ui/widgets/featured_subject_card.dart';
+import 'package:my_stats/presentation/home/widgets/featured_subject_card.dart';
 
 class FeaturedSubjects extends StatelessWidget {
 

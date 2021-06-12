@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_stats/lesson/ui/widgets/lesson_panel_list.dart';
+import 'package:my_stats/presentation/lesson/widgets/lesson_panel_list.dart';
 
 class LessonScreen extends StatefulWidget {
   String subjectName;
