@@ -5,9 +5,8 @@ import 'package:my_stats/presentation/home/widgets/home_appbar.dart';
 import 'package:my_stats/presentation/home/widgets/home_body.dart';
 import 'package:provider/provider.dart';
 
-class HomeScreen extends StatefulWidget {
-
-  HomeScreen._();
+class HomeScreen extends StatelessWidget {
+  const HomeScreen._({Key key}) : super(key: key);
 
   static Widget init(BuildContext context) {
     return ChangeNotifierProvider(
@@ -19,11 +18,6 @@ class HomeScreen extends StatefulWidget {
     );
   }
 
-  @override
-  _HomeScreenState createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,6 +33,5 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-
 }
 
