@@ -1,105 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:my_stats/presentation/home/home_bloc.dart';
+import 'package:provider/provider.dart';
 
 class HomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SliverList(
-      delegate: SliverChildBuilderDelegate((BuildContext context, int index){
-        return ListTile(
-          leading: Icon(subjects[index].subjectIcon),
-          title: Text(subjects[index].subjectTitle),
-          subtitle: Text(subjects[index].lessonQuantity),
+
+    return Consumer<HomeBloc>(
+      builder: (_, homeBloc, __){
+        return SliverList(
+            delegate: SliverChildBuilderDelegate(
+                  (BuildContext context, int index){
+                return ListTile(
+                  leading: Icon(homeBloc.subjects[index].subjectIcon),
+                  title: Text(homeBloc.subjects[index].subjectTitle),
+                  subtitle: Text(homeBloc.subjects[index].lessonQuantity),
+                );
+              },
+              childCount: homeBloc.subjects.length,
+            )
         );
-      },
-      childCount: subjects.length,
-      ),
+      }
     );
   }
 }
-
-class Subject {
-  final String subjectTitle;
-  final String lessonQuantity;
-  final IconData subjectIcon;
-
-  const Subject({
-    this.subjectTitle,
-    this.lessonQuantity,
-    this.subjectIcon
-  });
-
-}
-
-final subjects = [
-  new Subject(
-    subjectTitle: 'Sistemas Operativos II',
-    lessonQuantity: '12 lecciones',
-    subjectIcon: Icons.access_alarm
-  ),
-  new Subject(
-      subjectTitle: 'Álgebra Lineal',
-      lessonQuantity: '10 lecciones',
-      subjectIcon: Icons.access_alarm
-  ),
-  new Subject(
-      subjectTitle: 'Bases de Datos',
-      lessonQuantity: '15 lecciones',
-      subjectIcon: Icons.access_alarm
-  ),
-  new Subject(
-      subjectTitle: 'Matemática II',
-      lessonQuantity: '12 lecciones',
-      subjectIcon: Icons.access_alarm
-  ),
-  new Subject(
-      subjectTitle: 'Programación I',
-      lessonQuantity: '20 lecciones',
-      subjectIcon: Icons.access_alarm
-  ),
-  new Subject(
-      subjectTitle: 'Misterio Cristiano',
-      lessonQuantity: '5 lecciones',
-      subjectIcon: Icons.access_alarm
-  ),
-  new Subject(
-      subjectTitle: 'Inglés I',
-      lessonQuantity: '12 lecciones',
-      subjectIcon: Icons.access_alarm
-  ),
-  new Subject(
-      subjectTitle: 'Sistemas Operativos II',
-      lessonQuantity: '12 lecciones',
-      subjectIcon: Icons.access_alarm
-  ),
-  new Subject(
-      subjectTitle: 'Sistemas Operativos II',
-      lessonQuantity: '12 lecciones',
-      subjectIcon: Icons.access_alarm
-  ),
-  new Subject(
-      subjectTitle: 'Sistemas Operativos II',
-      lessonQuantity: '12 lecciones',
-      subjectIcon: Icons.access_alarm
-  ),
-  new Subject(
-      subjectTitle: 'Sistemas Operativos II',
-      lessonQuantity: '12 lecciones',
-      subjectIcon: Icons.access_alarm
-  ),
-  new Subject(
-      subjectTitle: 'Sistemas Operativos II',
-      lessonQuantity: '12 lecciones',
-      subjectIcon: Icons.access_alarm
-  ),
-  new Subject(
-      subjectTitle: 'Sistemas Operativos II',
-      lessonQuantity: '12 lecciones',
-      subjectIcon: Icons.access_alarm
-  ),
-  new Subject(
-      subjectTitle: 'Sistemas Operativos II',
-      lessonQuantity: '12 lecciones',
-      subjectIcon: Icons.access_alarm
-  ),
-];
