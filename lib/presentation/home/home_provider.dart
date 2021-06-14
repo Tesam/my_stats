@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:my_stats/domain/entities/subject.dart';
 import 'package:my_stats/domain/usecases/home_use_case.dart';
 
-class HomeBloc  extends ChangeNotifier{
+class HomeProvider  extends ChangeNotifier{
 
-  HomeBloc({this.homeUseCase}){
+  HomeProvider({this.homeUseCase}){
     getSubjects();
   }
 
