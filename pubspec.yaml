@@ -92,15 +92,3 @@ flutter:
           weight: 400
         - asset: assets/fonts/OpenSans-Light.ttf
           weight: 300
-
-
-        - asset: assets/fonts/OpenSans-BoldItalic.ttf
-          style: italic
-        - asset: assets/fonts/OpenSans-ExtraBoldItalic.ttf
-          style: italic
-        - asset: assets/fonts/OpenSans-Italic.ttf
-          style: italic
-        - asset: assets/fonts/OpenSans-LightItalic.ttf
-          style: italic
-        - asset: assets/fonts/OpenSans-SemiBoldItalic.ttf
-          style: italic
