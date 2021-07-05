@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_stats/dependencies.dart';
-import 'package:my_stats/presentation/home/screens/home_screen.dart';
+import 'package:my_stats/presentation/extra/app_light_theme.dart';
+import 'package:my_stats/presentation/splash/screens/splash.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -16,11 +17,8 @@ class MyApp extends StatelessWidget {
       child: Builder(builder: (context) {
         return MaterialApp(
           title: 'Flutter Demo',
-          theme: ThemeData(
-            primarySwatch: Colors.blue,
-            visualDensity: VisualDensity.adaptivePlatformDensity,
-          ),
-          home: HomeScreen.init(context),
+          theme: appLightTheme(),
+          home: Splash()
         );
       }),
     );
