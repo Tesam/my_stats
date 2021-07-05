@@ -13,5 +13,8 @@ ThemeData appLightTheme(){
 
   return ThemeData(
     textTheme: _textTheme,
+    colorScheme: ColorScheme.light(),
+    primaryColor: Color.fromRGBO(255, 128, 101, 1),
+    primaryColorLight: Color.fromRGBO(255, 144, 89, 0.2),
   );
 }
